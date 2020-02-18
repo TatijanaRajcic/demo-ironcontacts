@@ -1,0 +1,13 @@
+.FullList table {
+  margin-left:auto; 
+  margin-right:auto
+}
+
+.FullList .buttons-control {
+  display:flex;
+  justify-content: center;
+}
+
+.FullList .buttons-control button {
+  margin: 10px
+}
