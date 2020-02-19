@@ -65,10 +65,10 @@ export default class FullList extends Component {
 
   render() {
 
-    let finalContacts = this.state.shortList.map(contact => {
+    let finalContacts = this.state.shortList.map((contact,index) => {
       return <Celebrity 
-        key={contact.id}
-        id={contact.id}
+        key={index}
+        id={contact.id} // we could use index here too. it would slightly change what the removeContact functions does
         image={contact.pictureUrl} 
         name={contact.name} 
         popularity={contact.popularity}
